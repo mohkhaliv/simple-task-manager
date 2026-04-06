@@ -1,4 +1,4 @@
-# Simple Task Manager (Angular + Spring Boot)
+# Task Management System (Angular + Spring Boot)
 
 Full-stack task management web app built with Angular and Spring Boot, using MySQL for data persistence.
 
