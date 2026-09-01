@@ -7,7 +7,8 @@ import { Task, TaskRequest } from './task.model';
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:8080/api/tasks';
+private apiUrl =
+  'https://task-management-system-production-0a1f.up.railway.app/api/tasks';
 
   constructor(private http: HttpClient) {}
 
