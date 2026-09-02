@@ -12,7 +12,8 @@ import java.util.List;
 @RequestMapping("/api/tasks")
 @CrossOrigin(origins = {
     "http://localhost:4200",
-    "https://task-management-system-khaliv.vercel.app"
+    "https://task-management-system-khaliv.vercel.app",
+    "https://task-management-system-beryl-ten.vercel.app"
 })
 public class TaskController {
 
