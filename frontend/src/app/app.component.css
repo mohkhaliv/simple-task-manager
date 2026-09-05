@@ -4,8 +4,9 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: #1a1d23;
+  color: #e2e4e9;
 }
 
 .container {
@@ -16,14 +17,21 @@ body {
 
 h1, h2, h3 {
   margin-top: 0;
+  color: #f4f5f7;
+}
+
+h1 {
+  letter-spacing: -0.02em;
 }
 
 .card {
-  background: #ffffff;
-  border-radius: 10px;
+  background: #23262e;
+  border-radius: 14px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid #2e323c;
+  transition: box-shadow 0.2s ease;
 }
 
 .form-group {
@@ -34,15 +42,31 @@ h1, h2, h3 {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
+  color: #c7cad1;
 }
 
 input[type="text"],
 textarea {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #ccd3db;
+  border: 1px solid #3a3f4b;
   border-radius: 8px;
   font-size: 14px;
+  background: #1a1d23;
+  color: #e2e4e9;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #6b7280;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7c9cf0;
+  box-shadow: 0 0 0 3px rgba(124, 156, 240, 0.18);
 }
 
 .checkbox-group label {
@@ -68,23 +92,46 @@ textarea {
 
 button {
   border: none;
-  background: #2563eb;
-  color: white;
+  background: #4d6bc6;
+  color: #f4f5f7;
   padding: 10px 14px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #5c78cf;
+}
+
+button:active {
+  transform: scale(0.97);
 }
 
 button.secondary {
-  background: #64748b;
+  background: #3a3f4b;
+  color: #d1d4db;
+}
+
+button.secondary:hover {
+  background: #454b59;
 }
 
 button.danger {
-  background: #dc2626;
+  background: #b9556b;
+}
+
+button.danger:hover {
+  background: #c56779;
 }
 
 button.active {
-  background: #16a34a;
+  background: #4f9e73;
+}
+
+button.active:hover {
+  background: #5cad80;
 }
 
 .message {
@@ -94,20 +141,27 @@ button.active {
 }
 
 .message.error {
-  background: #fee2e2;
-  color: #991b1b;
+  background: #3a2529;
+  color: #f2a3ae;
 }
 
 .message.success {
-  background: #dcfce7;
-  color: #166534;
+  background: #22352b;
+  color: #93d8ae;
 }
 
 .task-item {
-  border: 1px solid #e5e7eb;
+  border: 1px solid #2e323c;
   border-radius: 10px;
   padding: 16px;
   margin-bottom: 12px;
+  background: #1e2128;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.task-item:hover {
+  border-color: #3a3f4b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .task-header {
@@ -124,16 +178,21 @@ button.active {
 
 .done {
   text-decoration: line-through;
-  color: #6b7280;
+  color: #7a7f8a;
 }
 
 .description {
   margin: 8px 0;
-  color: #374151;
+  color: #b0b4bd;
+}
+
+small {
+  color: #8b8f99;
 }
 
 .empty-state {
   text-align: center;
   color: #6b7280;
-  padding: 16px;
+  padding: 32px 16px;
+  font-size: 14px;
 }
