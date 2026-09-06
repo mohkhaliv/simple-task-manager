@@ -1,3 +1,5 @@
+<img width="1859" height="996" alt="image" src="https://github.com/user-attachments/assets/b5622ca0-b1d5-4b71-9486-c85879b4bd1a" />
+
 # Task Management System
 
 Full-stack task management application built with Angular, Spring Boot, and MySQL.
